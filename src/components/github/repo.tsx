@@ -7,10 +7,10 @@ type Props = {
 
 export default function Card({repo}: Props) {
   return (
-    <div className="px-4 py-4 m-2 bg-stone-100/60 hover:bg-stone-100/90 rounded-md shadow-xl text-left">
+    <div className="px-4 py-4 bg-stone-100/40 hover:bg-stone-100/90 rounded-md shadow-xl text-left">
       <div className="flex justify-between">
         <Link href={repo.url} className="text-stone-600 text-sm font-semibold hover:underline underline-lg">@{repo.name}</Link>
-        <div className="flex text-stone-400">
+        <div className="flex text-stone-400 mt-[2px]">
           <div className="flex">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>

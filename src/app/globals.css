@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.link {
+    @apply hover:underline underline-offset-4 decoration-orange-400 decoration-wavy decoration-1;
+}
