@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="w-full lg:w-1/2 text-stone-800">
         <div className="lg:pr-4 mb-4">
           <p className="mb-4">
-            Hey there! 👋 I'm 
+            Hey there! 👋 I&apos;m 
             <h1 className="mt-8 mb-4 text-7xl font-extrabold font-calibre text-sky-700">Obay Adam</h1>
           </p>
           <p className="leading-relaxed">
