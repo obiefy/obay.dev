@@ -7,5 +7,9 @@
 }
 
 .bg-working {
-    background-image: url('../../public/working.jpg');
+    background-image: url('../../public/images/working.jpg');
+}
+
+.bg-cool {
+    background-image: url('../../public/images/cool.png');
 }

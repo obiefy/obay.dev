@@ -6,7 +6,7 @@ export default async function Repos () {
   const repos = await getRepos();
 
   return(
-    <div className="mt-24 mb-16">
+    <div className="my-16">
       <div className="flex mb-8 text-stone-600">
         <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-stone-600" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -14,7 +14,7 @@ export default async function Repos () {
         </svg>
         <Code className="ml-2 text-2xl font-medium" method="openSource"/>
       </div>
-      <div className="my-4 grid gap-3 text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 md:grid-cols-2 lg:text-left">
+      <div className="my-4 grid lg:grid-cols-2 gap-3 text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:text-left">
         {repos.map((repo) => <RepoCard key={repo.name} repo={repo} />)}
       </div>
     </div>

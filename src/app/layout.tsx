@@ -14,8 +14,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-working font-sfmono ${calibre.variable} ${sfmono.variable}`}>
-        <main className="bg-stone-200/90">{children}</main>
+      <body className={`font-sfmono ${calibre.variable} ${sfmono.variable}`}>
+        <main>{children}</main>
       </body>
     </html>
   )
