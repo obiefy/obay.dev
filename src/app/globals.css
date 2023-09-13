@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .link {
-    @apply hover:underline underline-offset-4 decoration-orange-400 decoration-wavy decoration-1;
+    @apply focus:border-none focus:underline hover:underline underline-offset-4 decoration-orange-400 decoration-wavy decoration-1;
+}
+
+.bg-working {
+    background-image: url('../../public/working.jpg');
 }

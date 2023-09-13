@@ -12,11 +12,10 @@ export default function Hero() {
             <div className="w-2 ml-2 mr-6 -mt-2 text-2xl animate-wave">👋</div>
             I&apos;m
           </div>
-          <h1 className="mt-8 mb-4 text-7xl font-extrabold font-calibre text-sky-700">Obay Adam</h1>
-          <p className="leading-relaxed">
-            I enjoy building web applications. My interest about coding started back in 2012, I created a very simple calculator using <Link className="font-medium link" href={'https://www.freepascal.org/'}>Pascal</Link> instructions. 
-            Right after, I completed my B.S. in Software Engineering, since then my journey as a software developer has been filled with exciting challenges and rewarding experiences.
-          </p>
+          <h1 className="mt-8 mb-4 text-9xl font-extrabold font-calibre text-sky-700">Obay Adam</h1>
+          <div className="text-2xl">
+            I build web applications
+          </div>
         </div>
       </div>
       <div className="w-full lg:w-1/2">

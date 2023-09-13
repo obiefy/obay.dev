@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Card({repo}: { repo: Repo }) {
   return (
-    <div className="px-4 py-4 bg-stone-100/40 hover:bg-stone-100/90 rounded-md shadow-md text-left">
+    <Link href={repo.url} className="px-4 py-4 bg-stone-100/40 hover:bg-stone-100/90 focus:bg-stone-100/90 rounded-md shadow-md text-left">
       <div className="flex justify-between">
-        <Link href={repo.url} className="text-stone-600 text-sm font-semibold hover:underline underline-lg">@{repo.name}</Link>
+        <span className="text-stone-600 text-sm font-semibold">{repo.name}</span>
         <div className="flex text-stone-400 mt-[2px]">
           <div className="flex">
             <span className="relative flex h-4 w-4">
@@ -32,6 +32,6 @@ export default function Card({repo}: { repo: Repo }) {
         </div>
       </div>
       <p className="h-10 mt-3 text-xs text-stone-500">{repo.description}</p>
-    </div>
+    </Link>
   );
 }

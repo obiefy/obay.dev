@@ -2,6 +2,7 @@ import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import Hero from '@/components/hero';
 import GithubRepos from '@/components/github/repos';
+import About from '@/components/about';
 
 export const metadata = {
   title: "obay.dev();"
@@ -13,6 +14,7 @@ export default async function Home() {
       <Navbar />
       <Hero />
       <GithubRepos />
+      <About />
       <Footer />
     </main>
   )

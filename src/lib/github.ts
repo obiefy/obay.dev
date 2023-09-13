@@ -1,15 +1,11 @@
 import { Repo } from "@/types";
 
 export const getRepos = async (): Promise<Repo[]> => {
-  return [await getRepo('obiefy/api-response'), await getRepo('obiefy/sudanese-oss'), await getRepo('obiefy/tookan-client')];
+  return [await getRepo('obiefy/api-response'), await getRepo('obiefy/sudanese-oss'), await getRepo('akiyamaSM/larapoll')];
 }
 
 export const getRepo = async (name: string): Promise<Repo> => {
-  const res = await fetch(`https://api.github.com/repos/${name}`, {
-    next: {
-      revalidate: 10,
-    }
-  });
+  const res = await fetch(`https://api.github.com/repos/${name}`);
   const repo = await res.json();
 
   return {

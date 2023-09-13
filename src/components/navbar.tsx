@@ -1,10 +1,11 @@
 import Link from "next/link";
+import Code from "@/components/code";
 
 export default function Navbar() {
   return (
-    <nav className="w-full mt-4 mb-4 lg:mb-12 py-4 text-stone-500 font-medium">
+    <nav className="w-full mb-4 lg:mb-12 py-8 text-stone-500 font-medium">
       <Link href={'/'} className="link">
-        <span className="text-sky-700">obay</span>.<span className="text-sky-700">dev</span>();
+        <Code method="dev" />
       </Link>
     </nav>
   );
