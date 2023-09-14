@@ -1,5 +1,5 @@
 import Image from "next/image";
-import working from '../../public/images/working.jpg'
+import traveler from '../../public/images/traveler.png'
 import Link from "next/link";
 
 export default function Hero() {
@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="w-full lg:w-1/2">
-        <Image className="rounded-md saturate-50" alt='Working' src={working} />
+        <Image className="rounded-md saturate-50" alt='Working' src={traveler} />
       </div>
     </div>
   );

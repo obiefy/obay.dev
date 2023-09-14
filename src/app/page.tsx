@@ -4,7 +4,7 @@ import Hero from '@/components/hero';
 import GithubRepos from '@/components/github/repos';
 import About from '@/components/about';
 import Image from 'next/image';
-import working from '../../public/images/working.jpg'
+import working from '../../public/images/developer.jpg'
 
 export const metadata = {
   title: "obay.dev();"
@@ -14,7 +14,7 @@ export default async function Home() {
   return (
     <main className="lg:flex">
       <div className="w-full bg-cool bg-left">
-        <div className="bg-stone-100/30 py-8 px-4">
+        <div className="bg-white/40 py-8 px-4">
           <div className="w-full text-stone-800">
             <div className="lg:pr-4 mb-4">
               <div className="mb-4 flex">
@@ -22,19 +22,20 @@ export default async function Home() {
                 <div className="w-2 ml-2 mr-6 -mt-2 text-2xl animate-wave">👋</div>
                 I&apos;m
               </div>
-              <h1 className="mt-8 mb-4 text-8xl font-extrabold font-calibre text-sky-700">Obay Adam</h1>
-              <div className="text-2xl">
+              <h1 className="mt-8 mb-4 text-6xl lg:md:text-8xl font-extrabold font-calibre text-sky-700">Obay Adam</h1>
+              <div className="text-xl lg:md:text-2xl">
                 I build web applications
               </div>
             </div>
           </div>
+          <Image className="sm:inline-block lg:hidden w-full h-full mt-12 saturate-50 rounded-md" alt='Working' src={working} />
           <GithubRepos />
           <About />
           <Footer />
         </div>
       </div>
-      <div className="w-full">
-        <div className="lg:fixed h-full">
+      <div className="hidden lg:md:inline-block w-full">
+        <div className="lg:md:fixed h-full">
           <Image className="object-cover w-full h-full saturate-50" alt='Working' src={working} />
         </div>
       </div>

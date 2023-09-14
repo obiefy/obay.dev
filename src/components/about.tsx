@@ -3,7 +3,7 @@ import Code from "@/components/code";
 export default function About() {
   
   return (
-    <div>
+    <div className="mt-16">
       <div className="flex mb-8 text-stone-600">
         <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-stone-600" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -18,6 +18,6 @@ export default function About() {
         <p className="mb-4">Beyond coding, I'm all about exploring new places, meeting fascinating people, and immersing myself in different cultures. When I'm not diving into lines of code or jet-setting to new destinations, you'll likely find me out for a run or on the football field. These activities keep me grounded and ready for the next coding adventure.</p>
         <p className="mb-4">Thanks for stopping by my digital corner. Let's connect and team up to create something truly amazing! 😊🚀</p>
       </div>
-</div>
+    </div>
   );
 }

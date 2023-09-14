@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Card({repo}: { repo: Repo }) {
   return (
-    <Link href={repo.url} className="px-4 py-4 bg-stone-100/40 hover:bg-stone-100/90 focus:bg-stone-100/90 rounded-md shadow-md text-left">
+    <Link href={repo.url} className="px-4 py-4 bg-white hover:bg-stone-100/90 focus:bg-stone-100/90 rounded-md shadow-md text-left">
       <div className="flex justify-between">
         <span className="text-stone-600 text-sm font-semibold">{repo.name}</span>
         <div className="flex text-stone-400 mt-[2px]">

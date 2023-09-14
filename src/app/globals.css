@@ -6,10 +6,6 @@
     @apply focus:border-none focus:underline hover:underline underline-offset-4 decoration-orange-400 decoration-wavy decoration-1;
 }
 
-.bg-working {
-    background-image: url('../../public/images/working.jpg');
-}
-
 .bg-cool {
     background-image: url('../../public/images/cool.png');
 }
