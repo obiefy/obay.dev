@@ -3,12 +3,9 @@ import Footer from '@/components/footer';
 import Hero from '@/components/hero';
 import GithubRepos from '@/components/github/repos';
 import About from '@/components/about';
+import Links from '@/components/links';
 import Image from 'next/image';
-import working from '../../public/images/developer.jpg'
-
-export const metadata = {
-  title: "obay.dev();"
-}
+import developer from '../../public/images/developer.jpg';
 
 export default async function Home() {
   return (
@@ -23,12 +20,11 @@ export default async function Home() {
                 I&apos;m
               </div>
               <h1 className="mt-8 mb-4 text-6xl lg:md:text-8xl font-extrabold font-calibre text-sky-700">Obay Adam</h1>
-              <div className="text-xl lg:md:text-2xl">
-                I build web applications
-              </div>
+              <p className="text-xl lg:md:text-2xl">I build web applications</p>
+              <Links />
             </div>
           </div>
-          <Image className="sm:inline-block lg:hidden w-full h-full mt-12 saturate-50 rounded-md" alt='Working' src={working} />
+          <Image className="sm:inline-block lg:hidden w-full h-full mt-12 saturate-50 rounded-md" alt="Obay Adam" src={developer} />
           <GithubRepos />
           <About />
           <Footer />
@@ -36,7 +32,7 @@ export default async function Home() {
       </div>
       <div className="hidden lg:md:inline-block w-full">
         <div className="lg:md:fixed h-full">
-          <Image className="object-cover w-full h-full saturate-50" alt='Working' src={working} />
+          <Image className="object-cover w-full h-full saturate-50" alt='Obay Adam' src={developer} />
         </div>
       </div>
     </main>
