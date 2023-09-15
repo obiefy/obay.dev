@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.link {
-    @apply focus:border-none focus:underline hover:underline underline-offset-4 decoration-orange-400 decoration-wavy decoration-1;
+.image {
+    @apply rounded-md aspect-square object-cover w-full h-full;
 }
 
-.bg-cool {
-    background-image: url('../../public/images/cool.png');
+.link {
+    @apply focus:border-none focus:underline hover:underline underline-offset-4 decoration-orange-400 decoration-wavy decoration-1;
 }
