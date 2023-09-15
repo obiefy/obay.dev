@@ -2,6 +2,7 @@ import { calibre, sfmono } from '@/lib/fonts'
 import './globals.css'
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import developer from '../../public/images/developer/1.jpg';
 
 export const metadata: Metadata = {
   title: 'Obay Adam',
@@ -70,7 +71,7 @@ export default function RootLayout({
           <div>{children}</div>
 
           <div className="mt-24 text-center">
-            Built with <Link className="link text-sky-700" href={'https://nextjs.org/'}>Next.js</Link>,{' '}
+            Built wisth <Link className="link text-sky-700" href={'https://nextjs.org/'}>Next.js</Link>,{' '}
             <Link className="link text-sky-700" href={'https://tailwindcss.com/'}>TailwindCSS</Link>, and
             <Link className="link text-sky-700" href={'https://vercel.com/'}> Vercel</Link>. 
           </div>

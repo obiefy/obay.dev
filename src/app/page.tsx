@@ -1,16 +1,5 @@
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
-import Hero from '@/components/hero';
-import GithubRepos from '@/components/github/repos';
 import RepoCard from '@/components/github/repo';
-import About from '@/components/about';
-import Links from '@/components/links';
-import Image from 'next/image';
-import working from '../../public/images/developer.jpg'
-import { adventurer, developer, traveler } from '@/lib/modes';
-import Repos from '@/components/github/repos';
 import { getRepos } from '@/lib/github';
-import Link from 'next/link';
 import DeveloperGallery from '@/components/gallery/developer';
 import TravelerGallery from '@/components/gallery/traveler';
 
