@@ -9,11 +9,11 @@ import image5 from '../../../public/images/developer/5.jpg';
 export default function DeveloperGallery() {
   return (
     <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-2">
-      <Image className="image row-span-2 col-span-2" alt="Working at a library" src={image1} priority={true} />
-      <Image className="image md:row-span-2" alt="Working from home :)" src={image2} priority={true} />
-      <Image className="image" alt="Working from home :)" src={image3} />
-      <Image className="image" alt="Working from home :)" src={image4} />
-      <Image className="image object-left-bottom" alt="Working from home :)" src={image5}/>
+      <Image className="image row-span-2 col-span-2" alt="Working at a library" src={image1} priority />
+      <Image className="image md:row-span-2" alt="Working from home :)" src={image2} priority />
+      <Image className="image" alt="Working from home :)" src={image3} priority />
+      <Image className="image" alt="Working from home :)" src={image4} priority />
+      <Image className="image object-left-bottom" alt="Working from home :)" src={image5} priority/>
     </div>
   );
 }
