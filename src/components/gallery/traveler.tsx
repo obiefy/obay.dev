@@ -10,14 +10,14 @@ import image7 from '../../../public/images/traveler/7.png';
 
 export default function TravelerGallery() {
   return (
-    <div className="mt-8 grid grid-cols-3 gap-2">
+    <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-2">
       <Image className="col-span-2 row-span-2 image" alt='Working' src={image1}/>
-      <Image className="row-span-2 image" alt='Working' src={image2}/>
-      <Image className="row-span-2 object-scale-down image" alt='Working' src={image5}/>
+      <Image className="md:row-span-2 image" alt='Working' src={image5}/>
+      <Image className="md:row-span-2 image" alt='Working' src={image2}/>
       <Image className="image" alt='Working' src={image3}/>
       <Image className="image" alt='Working' src={image4}/>
       <Image className="image" alt='Working' src={image6}/>
-      <Image className="image" alt='Working' src={image7}/>
+      <Image className="image" alt='Working' src={image7}/> 
     </div>
   );
 }

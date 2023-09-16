@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/react';
+
 import { calibre, sfmono } from '@/lib/fonts'
 import './globals.css'
 import type { Metadata } from 'next'
@@ -6,27 +8,21 @@ import developer from '../../public/images/developer/1.jpg';
 
 export const metadata: Metadata = {
   title: 'Obay Adam',
-  description: "Hi there! I'm a passionate software developer with a strong background in web development. Over the past 5 years, my journey as a developer has been filled with exciting challenges and rewarding experiences, and I'm always eager to take on new opportunities to grow both personally and professionally.",
-  // TODO: Add icons
+  description: "I'm a passionate software developer and I build web applications.",
   icons: [],
-  // TODO: Update keywords
   keywords: ['development', 'coding', 'developer', 'software developer', 'software engineer', 'obay', 'obiefy'],
   
   openGraph: {
-    // type: 'website',
+    type: 'website',
     title: 'Obay Adam',
-    description: "Hi there! I'm a passionate software developer with a strong background in web development. Over the past 5 years, my journey as a developer has been filled with exciting challenges and rewarding experiences, and I'm always eager to take on new opportunities to grow both personally and professionally.",
-    // TODO: Add image
+    description: "I'm a passionate software developer and I build web applications.",
     images: developer.src,
     url: 'https://obay.dev',
   },
   twitter: {
-    // card: 'summary_large_image',
     title: 'Obay Adam',
-    description: "Hi there! I'm a passionate software developer with a strong background in web development. Over the past 5 years, my journey as a developer has been filled with exciting challenges and rewarding experiences, and I'm always eager to take on new opportunities to grow both personally and professionally.",
-    // url: 'https://obay.dev',
+    description: "I'm a passionate software developer and I build web applications.",
     images: developer.src,
-    // domain: "obay.dev",
   }
 }
 
@@ -38,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sfmono bg-slate-200 text-sm text-slate-900 ${calibre.variable} ${sfmono.variable}`}>
-        <main className="max-w-2xl mx-4 mb-8 lg:mx-auto">
+        <main className="max-w-2xl px-4 mb-8 mx-auto">
 
           <nav className="flex justify-between w-full mb-8 py-8">
             <Link href={'/'} className="link">
@@ -70,13 +66,15 @@ export default function RootLayout({
 
           <div>{children}</div>
 
-          <div className="mt-24 text-center">
+          <div className="mt-12 text-center">
             Built wisth <Link className="link text-sky-700" href={'https://nextjs.org/'}>Next.js</Link>,{' '}
             <Link className="link text-sky-700" href={'https://tailwindcss.com/'}>TailwindCSS</Link>, and
             <Link className="link text-sky-700" href={'https://vercel.com/'}> Vercel</Link>. 
           </div>
 
         </main>
+
+        <Analytics />
       </body>
     </html>
   )

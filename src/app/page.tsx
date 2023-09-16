@@ -19,7 +19,7 @@ export default async function Home() {
         I'm
       </div>
       <h1 className="mt-8 text-6xl lg:md:text-8xl font-extrabold font-calibre text-sky-700">Obay Adam</h1>
-      <p className="">I'm a passionate software developer with a knack for bringing ideas to life in the digital world.</p>
+      <p className="">I'm a passionate software developer and I build web applications.</p>
 
       <div className="mt-8">
         <DeveloperGallery />
@@ -27,8 +27,8 @@ export default async function Home() {
       <p className="mt-8">My coding journey started back in 2012 when I took on the challenge of creating a basic calculator using Pascal instructions during high school. That was just the beginning!</p>
       <p className="mt-2">I went on to earn my B.S. in Software Engineering, and ever since, my path as a software developer has been an exhilarating ride filled with exciting challenges and deeply rewarding experiences.</p>
       
-      <p className="mt-8">Checkout some of my open source contributions:</p>
-      <div className="mt-4 grid lg:grid-cols-2 gap-2">
+      <p className="mt-2">Besides my regular work on company projects, I find joy in contributing to open-source projects. Feel free to check out my open-source contributions</p>
+      <div className="mt-8 grid lg:grid-cols-2 gap-2">
         {repos.map((repo) => <RepoCard key={repo.name} repo={repo} />)}
       </div>
       

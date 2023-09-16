@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .image {
-    @apply rounded-md aspect-square object-cover w-full h-full;
+    @apply rounded-md shadow-sm aspect-square object-cover w-full h-full;
 }
 
 .link {

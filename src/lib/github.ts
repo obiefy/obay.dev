@@ -1,7 +1,7 @@
 import { Repo } from "@/types";
 
 export const getRepos = async (): Promise<Repo[]> => {
-  return [await getRepo('obiefy/api-response'), await getRepo('obiefy/sudanese-oss'), await getRepo('akiyamaSM/larapoll')];
+  return [await getRepo('obiefy/api-response'), await getRepo('obiefy/sudanese-oss'), await getRepo('akiyamaSM/larapoll'), await getRepo('obiefy/tookan-client')];
 }
 
 export const getRepo = async (name: string): Promise<Repo> => {
