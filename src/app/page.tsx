@@ -3,10 +3,6 @@ import { getRepos } from '@/lib/github';
 import DeveloperGallery from '@/components/gallery/developer';
 import TravelerGallery from '@/components/gallery/traveler';
 
-export const metadata = {
-  title: "obay.dev();"
-}
-
 export default async function Home() {
   
   const repos = await getRepos();
